@@ -1,0 +1,13 @@
+pandas
+numpy
+torch
+torchvision
+sentence-transformers
+transformers
+faiss-cpu
+opencv-python
+Pillow
+accelerate
+sentencepiece
+
+
