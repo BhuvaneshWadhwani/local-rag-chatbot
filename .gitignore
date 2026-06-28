@@ -1,18 +1,2 @@
-# Python
-__pycache__/
-*.pyc
-
-# Virtual environments
 .venv/
-venv/
-
-# Generated outputs
-outputs/
-*.db
-*.index
-
-# VS Code
-.vscode/
-
-# Jupyter
-.ipynb_checkpoints/
+data/
