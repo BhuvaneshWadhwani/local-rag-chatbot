@@ -1,2 +1,21 @@
+# Python
+__pycache__/
+*.pyc
 .venv/
+venv/
+
+# Generated preprocessing artifacts (rebuild via the *_Preprocessing.py scripts)
+outputs/
+
+# Raw datasets and video files (too large for git; document how to obtain them instead)
 data/
+
+# Hugging Face / torch model cache if downloaded into the repo
+.cache/
+*.pt
+*.bin
+
+# Editor / OS cruft
+.DS_Store
+.vscode/
+.idea/

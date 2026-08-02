@@ -1,0 +1,11 @@
+gradio>=5.0
+
+# Existing backend dependencies (Chatbot.py / retrieval.py / preprocessing scripts)
+torch
+transformers
+sentence-transformers
+faiss-cpu
+opencv-python
+Pillow
+pandas
+numpy
