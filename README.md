@@ -31,20 +31,20 @@ whole prompt pipeline is transparent rather than a black box.
 ## Architecture
 
 ```
-                ┌─────────────────┐
+                ┌───────────────────┐
    user query → │  ArticleRetriever │ → WikiHow context (SQLite + 2×FAISS)
-                └────────┬─────────┘
+                └────────┬──────────┘
                          ▼
-                ┌─────────────────┐
+                ┌──────────────────┐
                 │  Prompt builder  │ → system + context + rolled history
                 └────────┬─────────┘
                          ▼
-                ┌─────────────────┐
+                ┌───────────────────────┐
                 │ Qwen2.5-1.5B-Instruct │ → numbered-step answer
-                └────────┬─────────┘
+                └────────┬──────────────┘
                          ▼
                 ┌─────────────────┐
-   per step   → │  VideoRetriever  │ → ranked clip playlist (CLIP + FAISS)
+   per step   → │  VideoRetriever │ → ranked clip playlist (CLIP + FAISS)
                 └─────────────────┘
                          ▼
                    Gradio UI (chat + inspection + video panel)
